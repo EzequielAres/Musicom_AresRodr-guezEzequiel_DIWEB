@@ -1,0 +1,161 @@
+/*
+DECLARACIÓN DE VARIABLES
+*/
+
+:root {
+    --color-negro: #232323;
+    --color-rojo: #D74A2F;
+    --color-blanco: #FFFFFF;
+    --archivo-black: 'Archivo Black', sans-serif;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+/*
+IMPORTAR TIPOGRAFÍAS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Deca:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300&display=swap');
+
+
+/*
+CSS ocultar elementos móvil
+*/
+
+.movil {
+    display: none;
+}
+
+/*
+CSS RESPONSIVE
+*/
+
+@media (max-width: 1192px) {
+    /*
+    CSS MAIN
+    */
+
+    .contenedor__texto {
+        margin-bottom: -5vh;
+    }
+}
+
+@media (max-width: 960px) {
+    /*
+    CSS HEADER
+    */
+    .header__logo {
+        width: 17vw;
+    }
+    
+    .header__menu__element a {
+        font-size: 1.6vw;
+    }
+    
+    .header__menu__element{
+        padding: 0em 1.3em;
+    }
+    
+    .botones {
+        font-size: 1.6vw;
+    }
+
+    /*
+    CSS MAIN
+    */
+
+    .contenedor__texto {
+        font-size: 15vw;
+        margin-bottom: -5vh;
+    }
+
+    .contenedor__mensaje {
+        font-size: 2.7vw;
+    }
+
+    .contenedor__grupo__div {
+        width: 0.9vw;
+    }
+        
+    
+}
+
+@media (max-width: 650px) {
+    
+    header, .footer__primerafila, .footer__segundafila {
+        padding: 1em 2em;
+    }
+
+    /*
+    CSS HEADER
+    */
+
+    .header__logo {
+        width: 20vw;
+    }
+    
+    .header__menu__element a {
+        font-size: 1.9vw;
+    }
+    
+    .botones {
+        font-size: 1.9vw;
+    }
+
+    .header__menu__element{
+        padding: 0em 1em;
+    }
+
+    /*
+    CSS MAIN
+    */
+
+    .contenedor__texto {
+        font-size: 19vw;
+    }
+
+    .contenedor__mensaje {
+        font-size: 3.4vw;
+    }
+
+    .contenedor__grupo__div {
+        width: 1.1vw;
+    }
+}
+
+
+/*
+CSS CAMBIO A MÓVIL
+*/
+
+@media (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+    
+    .movil {
+        display:initial;
+    }
+
+    /*
+    CSS HEADER
+    */
+
+    .opciones {
+        margin-left: -21vw;
+    }
+
+    .movil--header__icono {
+        border: none;
+        background: none;
+        font-size: 5vw;
+    }
+
+    .movil--header__logo {
+        width: 30vw;
+    }
+
+    .movil--header__icono i:hover {
+        color: var(--color-rojo);
+    }
+}

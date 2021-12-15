@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- Links estilos -->
+    <link id="estilo" rel='stylesheet' type='text/css' media='screen' href='css/contact/contact.css'>
+    <link id="estiloMovil" rel='stylesheet' type='text/css' media='screen' href='css/contact/contact_responsive.css'>
+    
+    <!-- Links javascripts externos -->
+    <script src="js/desplegable.js"></script>
+    <script src="js/cambiarestilo.js"></script>
+</head>
+<body>
+    <header>
+        <!-- HTML header desktop -->
+
+        <a href="index.html"><img src="img/logo.svg" alt="Logo" class="header__logo logo desktop" id="logo1"></a>
+        <nav class="desktop">
+            <ul class="header__menu">
+                <li class="header__menu__element"><a href="index.html">Inicio</a></li>
+                <li class="header__menu__element"><a href="contact.html">Sobre nosotros</a></li>
+                <li class="header__menu__element"><button class="botones" onclick="cambiarestilo()"><i class="far fa-moon"></i></button></li>
+                <li class="header__menu__element"><a href="login.html"><i class="far fa-user"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- HTML header móvil -->
+
+        <button class="movil--header__icono opciones movil" onclick="abrir()"><i class="fas fa-bars"></i></button>
+        <a href="index.html" class="movil"><img src="img/logo.svg" alt="Logo" class="movil--header__logo logo movil" id="logo2"></a>
+        <a href="login.html" class="movil--header__icono movil"><i class="far fa-user movil"></i></a>
+
+    </header>
+    <main>
+
+        <!-- Fondo negro transparente para cuando se abra el sidebar en la versión movil -->
+
+        <div id="contenedor__fondo">
+        </div>
+
+        <!-- HTML sidebar móvil -->
+
+        <aside class="oculto" id="sidebar">
+            <div class="main__sidebar--movil">
+                <a href="index.html"><img src="img/logo.svg" alt="Logo" class="header__logo--sidebar logo" id="logo4"></a>
+                <ul class="header__menu">
+                    <li class="header__menu__element"><a href="index.html">Inicio</a></li>
+                    <li class="header__menu__element"><a href="">Sobre nosotros</a><ul>
+                        <li class="header__menu__element submenu"><a href="contact.html">Contacto</a></li>
+                        <li class="header__menu__element submenu"><a href="">FAQ</a></li>
+                    </ul></li>
+                </ul>
+    
+                <div class="main__sidebar__iconos">
+                    <button class="botones" onclick="cambiarestilo()"><i class="far fa-moon"></i></button>
+                    <button class="botones" onclick="cerrar()"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+        </aside>
+
+        <!-- HTML sidebar desktop -->
+
+        <aside class="main__sidebar desktop">
+            <ul class="main__sidebar__menu">
+                <li class="main__sidebar__menu__element"><a href="#">Sobre nosotros</a></li>
+                <li class="main__sidebar__menu__element"><a href="contact.html">Contacto</a></li>
+                <li class="main__sidebar__menu__element"><a href="#">FAQ</a></li>
+            </ul>
+        </aside>
+
+        <!-- HTML main -->
+
+        <div class="main__contenido">
+            <h1 class="main__contenido__titulo">Contacto</h1>
+            <p class="main__contenido__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="main__contenido__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="main__contenido__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="main__contenido__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </main>
+    <footer>
+
+        <!-- HTML footer desktop -->
+
+        <div class="footer__primerafila">
+            <a href="index.html"><img src="img/logo.svg" alt="LogoFooter" class="footer__primerafila__logo logo" id="logo3"></a>
+            <ul class="footer__primerafila__rrss">
+                <li class="footer__primerafila__rrss__element"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="footer__primerafila__rrss__element"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="footer__primerafila__rrss__element"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <ul class="footer__segundafila desktop">
+            <li class="footer__segundafila__element"><a href="#">Política de privacidad</a></li>
+            <li class="footer__segundafila__element"><a href="#">Aviso legal</a></li>
+            <li class="footer__segundafila__element"><a href="#">Cookies</a></li>
+            <li class="footer__segundafila__element"><a href="#">Condiciones de uso</a></li>
+        </ul>
+        
+        <!-- HTML footer móvil -->
+
+        <ul class="movil--footer__segundafila movil">
+            <li class="footer__segundafila__element"><a href="#">Aviso legal</a></li>
+            <li class="footer__segundafila__element"><a href="#">Cookies</a></li>
+        </ul>
+        
+        <ul class="movil--footer__tercerafila movil">
+            <li class="footer__tercerafila__element"><a href="#">Política de privacidad</a></li>
+            <li class="footer__tercerafila__element"><a href="#">Condiciones de uso</a></li>
+        </ul>
+
+    </footer>
+</body>
+</html>

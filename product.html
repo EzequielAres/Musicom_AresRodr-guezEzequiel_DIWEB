@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Playlist</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+    <!-- Links a estilos -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/product/product.css' id="estilo">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/product/product_responsive.css' id="estiloResponsive">
+    
+    <!-- Links a javascripts externos -->
+    <script src="js/desplegable.js"></script>
+    <script src="js/cambiarestilo.js"></script>
+    <script src="js/product.js"></script>
+
+</head>
+<body>
+    <header>
+        <!-- HTML header desktop -->
+
+        <a href="index.html"><img src="img/logo.svg" alt="Logo" class="header__logo logo desktop" id="logo1"></a>
+        <nav class="desktop">
+            <ul class="header__menu">
+                <li class="header__menu__element"><a href="index.html">Inicio</a></li>
+                <li class="header__menu__element"><a href="contact.html">Sobre nosotros</a></li>
+                <li class="header__menu__element"><button class="botones" onclick="cambiarestilo()"><i class="far fa-moon"></i></button></li>
+                <li class="header__menu__element"><a href="login.html"><i class="far fa-user"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- HTML header móvil -->
+
+        <button class="movil--header__icono opciones movil" onclick="abrir()"><i class="fas fa-bars"></i></button>
+        <a href="index.html" class="movil"><img src="img/logo.svg" alt="Logo" class="movil--header__logo logo movil" id="logo2"></a>
+        <a href="login.html" class="movil--header__icono movil"><i class="far fa-user movil"></i></a>
+
+    </header>
+    <main>
+
+        <!-- Fondo negro transparente para cuando se abra el sidebar en la versión movil -->
+
+        <div id="contenedor__fondo">
+        </div>
+
+        <!-- HTML sidebar desktop -->
+
+        <aside class="main__sidebar desktop">
+            <ul class="main__sidebar__menu">
+                <li class="main__sidebar__menu__element"><a href="explore.html">Explorar</a></li>
+                <li class="main__sidebar__menu__element"><a href="#">Música</a></li>
+                <li class="main__sidebar__menu__element"><a href="#">Radio</a></li>
+                <li class="main__sidebar__menu__element"><a href="#"> Mi perfil </a>
+                    <ul class="main__sidebar__menu__element">
+                        <li class="main__sidebar__menu__element"><a href="product.html">Rap</a></li>
+                        <li class="main__sidebar__menu__element"><a href="#">Rock</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- HTML sidebar móvil -->
+
+        <aside class="oculto" id="sidebar">
+            <div class="main__sidebar--movil">
+                <a href="index.html"><img src="img/logo.svg" alt="Logo" class="header__logo--sidebar logo" id="logo4"></a>
+                <ul class="header__menu">
+                    <li class="header__menu__element"><a href="index.html">Inicio</a></li>
+                    <li class="header__menu__element"><a href="">Sobre nosotros</a><ul>
+                        <li class="header__menu__element submenu"><a href="contact.html">Contacto</a></li>
+                        <li class="header__menu__element submenu"><a href="">FAQ</a></li>
+                    </ul></li>
+                    <li class="header__menu__element"><a href="explore.html">Explorar</a></li>
+                    <li class="header__menu__element"><a href="">Música</a></li>
+                    <li class="header__menu__element"><a href="">Radio</a></li>
+                    <li class="header__menu__element"><a href="landing.html">Mi perfil</a><ul>
+                        <li class="header__menu__element submenu"><a href="product.html">Rap</a></li>
+                        <li class="header__menu__element submenu"><a href="">Lista 2</a></li>
+                    </ul></li>
+                </ul>
+    
+                <div class="main__sidebar__iconos">
+                    <button class="botones" onclick="cambiarestilo()"><i class="far fa-moon"></i></button>
+                    <button class="botones" onclick="cerrar()"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- HTML main -->
+
+        <section class="main__separador">
+
+            <!-- HTML main -->
+
+            <section class="main__separador__inicio">
+                <div class="main__separador__inicio__grupo">
+                    <img src="img/placeholder.png" alt="Portada" class="main__separador__inicio__grupo__portada">
+                    <div class="main__separador__inicio__grupo__texto">
+                        <h1>Rap</h1>
+                        <h2>Creada por ti</h2>
+                    </div>
+                </div>
+                <ul class="main__separador__inicio__iconos desktop">
+                    <li><button class="main__separador__inicio__iconos__botones"><i class="fas fa-ellipsis-h"></i></button></li>
+                    <li><button class="main__separador__inicio__iconos__botones"><i class="fas fa-share-alt"></i></button></li>
+                    <li><button class="main__separador__inicio__iconos__reproducir">Reproducir</button></li>
+                </ul>
+
+                <ul class="main__separador__inicio__iconos movil">
+                    <div class="main__separador__inicio__iconoc__posicionamiento">
+                        <li><button class="main__separador__inicio__iconos__botones"><i class="fas fa-ellipsis-h"></i></button></li>
+                        <li><button class="main__separador__inicio__iconos__botones"><i class="fas fa-share-alt"></i></button></li>
+                    </div>
+                    <li><button class="main__separador__inicio__iconos__reproducir">Reproducir</button></li>
+                </ul>
+            </section>
+
+            <!-- HTML lista -->
+
+            <section class="main__separador__lista">
+                <div class="main__separador__lista__titulo" id="titulo">
+                    <span class="desktop">Canción</span>
+                    <span class="desktop">Álbum</span>
+                    <span class="desktop">Artista</span>
+                    <span class="desktop">Duración</span>
+                    <i class="far fa-image movil"></i>
+                    <i class="fas fa-music movil"></i>
+                    <i class="fas fa-compact-disc movil"></i>
+                    <i class="far fa-clock movil"></i>
+                </div>
+                <div class="main__separador__lista__cancion">
+                    <img class="movil  portadaListaMovil" src="img/placeholder.png" alt="portada">
+                    <span class="desktop">xxxxxx</span>
+                    <span class="desktop">xxxxxx</span>
+                    <div class="main__separador__lista__cancion__posicionamiento movil">
+                        <span class="">xxxxxx</span>
+                        <span class="">xxxxxx</span>    
+                    </div>
+
+                    <span>xxxxxx</span>
+                    <span>xxxxxx</span>
+                    <div >
+                        <button class="main__separador__lista__cancion__iconos"><i class="fas fa-share-alt"></i></button>
+                        <button class="main__separador__lista__cancion__iconos"><i class="far fa-heart"></i></button>
+                        <button class="main__separador__lista__cancion__iconos" onclick="borrar(this)"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="main__separador__lista__cancion">
+                    <img class="movil portadaListaMovil" src="img/placeholder.png" alt="portada">
+                    <span class="desktop">xxxxxx</span>
+                    <span class="desktop">xxxxxx</span>
+                    <div class="main__separador__lista__cancion__posicionamiento movil">
+                        <span class="">xxxxxx</span>
+                        <span class="">xxxxxx</span>    
+                    </div>
+                    <span>xxxxxx</span>
+                    <span>xxxxxx</span>
+                    <div>
+                        <button class="main__separador__lista__cancion__iconos"><i class="fas fa-share-alt"></i></button>
+                        <button class="main__separador__lista__cancion__iconos"><i class="far fa-heart"></i></button>
+                        <button class="main__separador__lista__cancion__iconos" onclick="borrar(this)"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="main__separador__lista__cancion">
+                    <img class="movil portadaListaMovil" src="img/placeholder.png" alt="portada">
+                    <span class="desktop">xxxxxx</span>
+                    <span class="desktop">xxxxxx</span>
+                    <div class="main__separador__lista__cancion__posicionamiento movil">
+                        <span class="">xxxxxx</span>
+                        <span class="">xxxxxx</span>    
+                    </div>
+                    <span>xxxxxx</span>
+                    <span>xxxxxx</span>
+                    <div>
+                        <button class="main__separador__lista__cancion__iconos"><i class="fas fa-share-alt"></i></button>
+                        <button class="main__separador__lista__cancion__iconos"><i class="far fa-heart"></i></button>
+                        <button class="main__separador__lista__cancion__iconos" onclick="borrar(this)"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="main__separador__lista__cancion">
+                    <img class="movil portadaListaMovil" src="img/placeholder.png" alt="portada">
+                    <span class="desktop">xxxxxx</span>
+                    <span class="desktop">xxxxxx</span>
+                    <div class="main__separador__lista__cancion__posicionamiento movil">
+                        <span class="">xxxxxx</span>
+                        <span class="">xxxxxx</span>    
+                    </div>
+                    <span>xxxxxx</span>
+                    <span>xxxxxx</span>
+                    <div>
+                        <button class="main__separador__lista__cancion__iconos"><i class="fas fa-share-alt"></i></button>
+                        <button class="main__separador__lista__cancion__iconos"><i class="far fa-heart"></i></button>
+                        <button class="main__separador__lista__cancion__iconos" onclick="borrar(this)"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <div class="main__separador__lista__cancion__form desktop">
+                    <form onsubmit="añadirCancion(this)" id="formulario">
+                        <input type="text" placeholder="Nombre" name="Nombre" id="nombre">
+                        <input type="text" placeholder="Album" name="Album" id="album">
+                        <input type="text" placeholder="Artista" name="Artista" id="artista">
+                        <input type="text" placeholder="Duración" name="Duracion" id="duracion">
+                        <button class="main__separador__lista__cancion__form__ultimoboton"><i class="fas fa-plus"></i></button>
+                    </form>
+                </div>
+                <div class="main__separador__lista__cancion__form modificacion movil">
+                    <button class="main__separador__lista__cancion__form__ultimoboton"><i class="fas fa-plus"></i></button>
+                </div>
+            </section>
+
+            <!-- HTML playlists -->
+
+            <section class="main__separador__elementos">
+                <div class="main__separador__elementos__titulo">
+                    <h1>Playlist recomendadas</h1>
+                    <a href="#">Ver más</a>
+                </div>
+                <figure class="main__separador__elementos__elemento">
+                    <img src="img/placeholder.png" alt="album" class="main__separador__elementos__elemento__portada">
+                    <h2 class="main__separador__elementos__elemento__titulo">Titulo album</h2>
+                </figure>
+                <figure class="main__separador__elementos__elemento">
+                    <img src="img/placeholder.png" alt="album" class="main__separador__elementos__elemento__portada">
+                    <h2 class="main__separador__elementos__elemento__titulo">Titulo album</h2>
+                </figure>
+                <figure class="main__separador__elementos__elemento">
+                    <img src="img/placeholder.png" alt="album" class="main__separador__elementos__elemento__portada">
+                    <h2 class="main__separador__elementos__elemento__titulo">Titulo album</h2>
+                </figure>
+                <figure class="main__separador__elementos__elemento">
+                    <img src="img/placeholder.png" alt="album" class="main__separador__elementos__elemento__portada">
+                    <h2 class="main__separador__elementos__elemento__titulo">Titulo album</h2>
+                </figure>
+            </section>
+        </section>
+    </main>
+    <footer>
+
+        <!-- HTML footer desktop -->
+
+        <figure class="footer__cancionportada desktop">
+            <img src="img/placeholder.png" alt="portada" class="footer__cancionportada__imagen">
+            <div class="footer__cancionportada__texto">
+                <span class="footer__cancionportada__texto__cancion">Cancion</span>
+                <span class="footer__cancionportada__texto__artista">Artista</span>
+            </div>
+        </figure>
+        <section class="footer__botonesduracion desktop">
+            <div class="footer__botonesduracion__botones">
+                <ul class="footer__botonesduracion__botones__grupo">
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-random"></i></button></i></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-redo"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-volume-up"></i></button></li>
+                </ul>
+                <ul class="footer__botonesduracion__botones__grupo">
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-backward"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton" id="play"><i class="fas fa-play"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-forward"></i></button></li>
+                </ul>
+                <ul class="footer__botonesduracion__botones__grupo">
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-sliders-h"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-list"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-share-alt"></i></button></li>
+                </ul>
+            </div>
+            <div class="footer__botonesduracion__duracion">
+                <span>00:00</span>
+                <div class="footer__botonesduracion__duracion__barra"></div>
+                <span>00:00</span>
+            </div>
+        </section>
+
+        <!-- HTML footer móvil -->
+
+        <div class="movil--footer movil">
+            <figure class="footer__cancionportada">
+                <img src="img/placeholder.png" alt="portada" class="footer__cancionportada__imagen">
+                <div class="footer__cancionportada__texto">
+                    <span class="footer__cancionportada__texto__cancion">Cancion</span>
+                    <span class="footer__cancionportada__texto__artista">Artista</span>
+                </div>
+            </figure>
+
+            <div class="footer__botonesduracion__botones">
+                <ul class="footer__botonesduracion__botones__grupo">
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-random"></i></button></i></li>                 
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-backward"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton" id="play"><i class="fas fa-play"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-forward"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-redo"></i></button></li>
+                </ul>
+            </div>
+            <div class="footer__botonesduracion__botones">
+                <ul class="footer__botonesduracion__botones__grupo">
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-sliders-h"></i></button></li>
+                    <li><button class="footer__botonesduracion__botones__grupo__boton"><i class="fas fa-share-alt"></i></button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__botonesduracion__duracion movil">
+            <span>00:00</span>
+            <div class="footer__botonesduracion__duracion__barra"></div>
+            <span>00:00</span>
+        </div>
+    </footer>
+</body>
+</html>

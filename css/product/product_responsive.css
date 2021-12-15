@@ -1,0 +1,627 @@
+/*
+DECLARACIÓN DE VARIABLES
+*/
+
+:root {
+    --color-fondo: #232323CC;
+    --color-negro: #232323;
+    --color-rojo: #D74A2F;
+    --color-blanco: #FFFFFF;
+    --archivo-black: 'Archivo Black', sans-serif;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+/*
+IMPORTAR TIPOGRAFÍAS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Deca:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300&display=swap');
+
+/*
+CSS ocultar elementos móvil
+*/
+
+.movil {
+    display: none;
+}
+
+.oculto {
+    display: none;
+}
+
+#contenedor__fondo {
+    display: none;
+}
+
+/*
+CSS RESPONSIVE
+*/
+
+@media (max-width: 960px) {
+    /*
+    CSS HEADER
+    */
+    .header__logo {
+        width: 17vw;
+    }
+    
+    .header__menu__element a {
+        font-size: 1.6vw;
+    }
+    
+    .header__menu__element{
+        padding: 0em 1.3em;
+    }
+    
+    .botones {
+        font-size: 1.6vw;
+    }
+
+    /*
+    CSS SIDEBAR
+    */
+
+    .main__sidebar__menu__element a {
+        font-size: 1.5vw;
+    }
+
+    .main__sidebar__menu {
+        padding: 2vh 2.7vw;
+    }
+
+    .main__sidebar {
+        width: 14.5vw;
+    }
+
+    .main__separador {
+        width: 84.8vw;
+    }
+
+    /*
+    CSS MAIN
+    */
+
+    .main__separador__inicio__grupo {
+        padding: 0vh 1vw 5vh 3vw;
+    }
+
+    .main__separador__inicio__iconos {
+        padding: 1vh 1vw 5vh 3vw;
+    }
+
+    .main__separador__inicio__grupo__portada {
+        width: 25vw;
+    }
+
+    .main__separador__inicio__iconos__botones {
+        padding: 0.6vw;
+        font-size: 1.4vw;
+    }
+
+    .main__separador__inicio__iconos__reproducir {
+        font-size: 1.4vw;
+    }
+
+    .main__separador__inicio__grupo__texto h1 {
+        font-size: 2vw;
+    }
+    
+    .main__separador__inicio__grupo__texto h2 {
+        font-size: 1.5vw;
+    }
+
+    .main__separador__lista {
+        padding: 2vh 1vw 5vh 3vw;
+    }
+
+    .main__separador__lista__titulo {
+        font-size: 1.5vw;
+    }
+
+    .main__separador__lista__cancion {
+        font-size: 1.3vw;
+    }
+
+    .main__separador__lista__cancion__form input {
+        width: 10vw;
+    }
+
+    .main__separador__lista__cancion__iconos {
+        font-size: 1.3vw;
+    }
+
+    .main__separador__lista__cancion__form__ultimoboton {
+        font-size: 1.3vw;
+    }
+
+    .main__separador__elementos__titulo h1 {
+        font-size: 2vw;
+    }
+    
+    .main__separador__elementos__titulo a {
+        font-size: 1.5vw;
+    }
+    
+    .main__separador__elementos__elemento__portada {
+        width: 16.5vw;
+    }
+    
+    .main__separador__elementos__elemento__titulo {
+        font-size: 1.3vw;
+    }
+
+    /*
+    CSS FOOTER
+    */
+
+    .footer__cancionportada {
+        margin-left: 1vw;
+    }
+
+    .footer__cancionportada__imagen {
+        width: 8vw;
+    }
+
+    .footer__cancionportada__texto__cancion {
+        font-size: 1.5vw;
+    }
+
+    .footer__cancionportada__texto__artista {
+        font-size: 1.4vw;
+    }
+
+    .footer__botonesduracion__botones__grupo__boton {
+        font-size: 1.5vw;
+    }
+
+    .footer__botonesduracion {
+        margin-left: -23vw;
+    }
+
+    .footer__botonesduracion__duracion__barra {
+        width: 42vw;
+    }
+
+    .footer__botonesduracion__duracion span {
+        font-size: 1.5vw;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    
+    header, .footer__primerafila, .footer__segundafila {
+        padding: 1em 2em;
+    }
+
+    /*
+    CSS HEADER
+    */
+
+    .header__logo {
+        width: 20vw;
+    }
+    
+    .header__menu__element a {
+        font-size: 1.9vw;
+    }
+    
+    .botones {
+        font-size: 1.9vw;
+    }
+
+    .header__menu__element{
+        padding: 0em 1em;
+    }
+
+    /*
+    CSS SIDEBAR
+    */
+
+    .main__sidebar__menu__element a {
+        font-size: 1.7vw;
+    }
+
+    .main__sidebar__menu {
+        padding: 2vh 2.7vw;
+    }
+
+    .main__sidebar {
+        width: 15.5vw;
+    }
+
+    .main__separador {
+        width: 83.8vw;
+    }
+
+    /*
+    CSS MAIN
+    */
+
+    .main__separador__inicio__grupo {
+        padding: 2vh 1vw 3vh 3vw;
+    }
+
+    .main__separador__inicio__iconos {
+        padding: 1vh 1vw 3vh 3vw;
+    }
+
+    .main__separador__lista {
+        padding: 2vh 1vw 0vh 3vw;
+    }
+
+    .main__separador__inicio__grupo__portada {
+        width: 26vw;
+    }
+
+    .main__separador__inicio__iconos__botones {
+        padding: 0.6vw;
+        font-size: 1.7vw;
+    }
+
+    .main__separador__inicio__iconos__reproducir {
+        font-size: 1.7vw;
+    }
+
+    .main__separador__inicio__grupo__texto h1 {
+        font-size: 2.3vw;
+    }
+    
+    .main__separador__inicio__grupo__texto h2 {
+        font-size: 1.7vw;
+    }
+
+    .main__separador__lista__titulo {
+        font-size: 2.1vw;
+    }
+
+    .main__separador__lista__cancion {
+        font-size: 1.9vw;
+    }
+
+    .main__separador__lista__cancion__iconos {
+        font-size: 1.8vw;
+    }
+
+    .main__separador__lista__cancion__ultimoboton {
+        font-size: 1.8vw;
+    }
+
+    .main__separador__lista__titulo {
+        padding: 0vh 17vw 1vh 3vw;
+    }
+
+    .main__separador__elementos__titulo h1 {
+        font-size: 2vw;
+        align-self: flex-end;
+    }
+    
+    .main__separador__elementos__titulo a {
+        font-size: 1.5vw;
+    }
+    
+    .main__separador__elementos__elemento__portada {
+        width: 15.5vw;
+    }
+    
+    .main__separador__elementos__elemento__titulo {
+        font-size: 1.3vw;
+    }
+    
+    /*
+    CSS FOOTER
+    */
+
+    .footer__cancionportada {
+        margin-left: 2vw;
+    }
+
+    .footer__botonesduracion {
+        margin-left: -16vw;
+    }
+
+    .footer__cancionportada__imagen {
+        width: 11vw;
+    }
+
+    .footer__cancionportada__texto__cancion {
+        font-size: 1.7vw;
+    }
+
+    .footer__cancionportada__texto__artista {
+        font-size: 1.6vw;
+    }
+
+    .footer__botonesduracion__botones__grupo {
+        padding: 1vh 2vw;
+    }
+
+    .footer__botonesduracion__botones__grupo__boton {
+        font-size: 1.7vw;
+    }
+
+    .footer__botonesduracion__duracion__barra {
+        width: 39vw;
+    }
+
+    .footer__botonesduracion__duracion span {
+        font-size: 1.7vw;
+    }
+}
+
+/*
+CSS CAMBIO A MÓVIL
+*/
+
+@media (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+    
+    .movil {
+        display:initial;
+    }
+
+    /*
+    CSS HEADER
+    */
+
+    .opciones {
+        margin-left: -21vw;
+    }
+
+    .movil--header__icono {
+        border: none;
+        background: none;
+        font-size: 5vw;
+        color: var(--color-negro);
+    }
+
+    .movil--header__logo {
+        width: 30vw;
+    }
+
+    .movil--header__icono i:hover {
+        color: var(--color-rojo);
+
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+    }
+
+    
+    .main__separador__elementos__canciones {
+        padding: 1vh 1vw 0vh 1vw;
+    }
+
+    .main__separador__elementos__canciones__contenedor {
+        padding: 0vh 0.5vw;
+        height: 13vh;
+    }
+
+    .main__separador__elementos__canciones__contenedor__portada {
+        width: 16.7vw;
+        margin: auto;
+    }
+
+    .main__separador__elementos__canciones__contenedor__cancionartista {
+        padding-left: 0.3vw;
+        font-size: 2.3vw;
+    }
+
+    .main__separador__elementos__canciones__contenedor__duracion {
+        padding-left: -4vw;
+        font-size: 2.2vw;
+        margin-left: -0.5vh;
+    }
+
+    /*
+    CSS SIDEBAR
+    */
+
+    .oculto {
+        top: 0;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .oculto>* {
+        padding: 7vh 2vh 1vh 2vh;
+    }
+
+    #contenedor__fondo {
+        top: 0;
+        position: absolute;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--color-fondo);
+    }
+
+    .main__sidebar--movil {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .header__logo--sidebar {
+        width: 30vw;
+        display: block;
+        margin: auto;
+        padding-bottom: 4vh;
+    }
+
+    .header__menu__element {
+        display: block;
+        padding-top: 5vh;
+        padding-left: 0vh;
+    }
+
+    .header__menu__element a {
+        font-size: 3vw;
+
+    }
+
+    .botones {
+        font-size: 4.5vw;
+    }
+
+    .botones i:hover {
+        color: var(--color-rojo);
+
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+    }
+
+    .main__sidebar__iconos {
+        text-align: center;
+        padding-top: 25vh;
+    }
+
+    /*
+    CSS MAIN
+    */
+    .main__separador {
+        width: 100%;
+        padding: 3vh;
+    }
+
+    .main__separador__elementos {
+        padding-bottom: 4vh;
+    }
+    
+    .main__separador__inicio__grupo__texto h1 {
+        font-size: 4vw;
+    }
+
+    .main__separador__inicio__grupo__texto h2 {
+        font-size: 3vw;
+    }
+
+    .main__separador__inicio__grupo__portada {
+        width: 30vw;
+    }
+
+    .main__separador__inicio__iconoc__posicionamiento {
+        padding-bottom: 1vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .main__separador__inicio__iconos__botones {
+        font-size: 2.5vw;
+        padding: 1.4vw;
+        margin-right: 1vw;
+    }
+
+    .main__separador__inicio__iconos__reproducir {
+        font-size: 2.5vw;
+        padding: 1.3vh 3vw;
+    }
+
+    .main__separador__lista__titulo {
+        padding: 0vh 25vw 1vh 3vw;
+    }
+
+    .main__separador__lista__titulo i {
+        font-size: 3vw;
+        padding: 0vh 3vw 0vh 2vh;
+    }
+
+    .portadaListaMovil {
+        width: 12vw;
+    }
+
+    .main__separador__lista__cancion__posicionamiento {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .main__separador__lista__cancion__posicionamiento span:nth-child(2) {
+        font-size: 2vw;
+    }
+
+    .main__separador__lista__cancion span {
+        font-size: 2.5vw;
+    }
+
+    .main__separador__lista__cancion__iconos i {
+        font-size: 2.5vw;
+        padding: 0.7vw;
+    }
+
+    .main__separador__lista__cancion__form {
+        padding: 1vh;
+    }
+
+    .main__separador__lista__cancion__form__ultimoboton {
+        font-size: 2.5vw;
+    }
+
+    .modificacion {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding-right: 8vw;
+    }
+
+    .main__separador__elementos {
+        padding: 2vh 0vw 0vh 0vw;
+    }
+
+    .main__separador__elementos__titulo h1 {
+        font-size: 3.5vw;
+    }
+
+    .main__separador__elementos__titulo a {
+        font-size: 2.5vw;
+    }
+
+    .main__separador__elementos__elemento__portada {
+        width: 19vw;
+    }
+
+    .main__separador__elementos__elemento__titulo {
+        font-size: 2vw;
+    }
+
+    /*
+    CSS FOOTER
+    */
+
+    .movil--footer {
+        display: flex;
+        width: 97%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    .footer__botonesduracion__botones {
+        width: auto;
+        padding-bottom: 2vh;
+    }
+    
+    .footer__botonesduracion__botones__grupo__boton {
+        font-size: 3vw;
+    }
+
+    .footer__cancionportada__texto__cancion {
+        font-size: 3vw;
+    }
+
+    .footer__cancionportada__texto__artista {
+        font-size: 2.5vw;
+    }
+
+    .footer__botonesduracion__duracion span {
+        font-size: 2.7vw;
+    }
+
+    .footer__botonesduracion__duracion__barra {
+        width: 66vw;
+    }
+}

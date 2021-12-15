@@ -1,0 +1,617 @@
+/*
+DECLARACIÓN DE VARIABLES
+*/
+
+:root {
+    --color-negro: #232323;
+    --color-rojo: #D74A2F;
+    --color-blanco: #FFFFFF;
+    --archivo-black: 'Archivo Black', sans-serif;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+/*
+IMPORTAR TIPOGRAFÍAS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Deca:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300&display=swap');
+
+/*
+CSS ocultar elementos móvil
+*/
+
+.movil {
+    display: none;
+}
+
+.oculto {
+    display: none;
+}
+
+#contenedor__fondo {
+    display: none;
+}
+
+
+/*
+CSS RESPONSIVE
+*/
+
+@media (max-width: 960px) {
+    /*
+    CSS HEADER
+    */
+    .header__logo {
+        width: 17vw;
+    }
+    
+    .header__menu__element a {
+        font-size: 1.6vw;
+    }
+    
+    .header__menu__element{
+        padding: 0em 1.3em;
+    }
+    
+    .botones {
+        font-size: 1.6vw;
+    }
+
+    /*
+    CSS SIDEBAR
+    */
+
+    .main__sidebar__menu__element a {
+        font-size: 1.5vw;
+    }
+
+    .main__sidebar__menu {
+        padding: 2vh 2.7vw;
+    }
+
+    .main__sidebar {
+        width: 14.5vw;
+    }
+
+    .main__separador {
+        width: 84.8vw;
+    }
+
+    /*
+    CSS BUSCADOR
+    */
+
+    .main__separador__buscador {
+        margin-bottom: 4vh;
+        height: 3vh;
+    }
+
+    .main__separador__buscador__input {
+        height: 1.9vh;
+    }
+
+    .main__separador__buscador__icono {
+        font-size: 1.3vw;
+        padding-top: 0.8vh;
+    }
+
+    /*
+    CSS MAIN
+    */
+
+    .main__separador__elementos__titulo h1 {
+        font-size: 2vw;
+    }
+    
+    .main__separador__elementos__titulo a {
+        font-size: 1.5vw;
+    }
+    
+    .main__separador__elementos__elemento__portada {
+        width: 15vw;
+    }
+    
+    .main__separador__elementos__elemento__titulo {
+        font-size: 1.3vw;
+    }
+
+    .portadaArtista {
+        margin: 0vh 0vw 0vh 0vw;
+    }
+
+    .main__separador__elementos__elemento {
+        padding: 2vh 0.4vw 5vh 3vw;
+    }
+
+    .main__separador__elementos__elemento li {
+        padding: 2vh 3.27vw;
+        border: 3px solid var(--color-rojo);
+        border-radius: 0.5em;
+    }
+    
+    .main__separador__elementos__elemento li a {
+        font-size: 1.3vw;
+    }
+    
+    .main__separador__elementos__canciones__contenedor {
+        padding: 0.7vh 0.7vw;
+        width: 17.2vw;
+    }
+    
+    .main__separador__elementos__canciones__contenedor__portada {
+        width: 6vw;
+    }
+    
+    .main__separador__elementos__canciones__contenedor__cancionartista {
+        padding-left: 0.3vw;  
+        font-size: 1.2vw;
+    }
+    .main__separador__elementos__canciones__contenedor__duracion {
+        padding-left: 0vw;
+        font-size: 1.2vw;
+    }
+
+    /*
+    CSS FOOTER
+    */
+
+    .footer__cancionportada {
+        margin-left: 1vw;
+    }
+
+    .footer__cancionportada__imagen {
+        width: 8vw;
+    }
+
+    .footer__cancionportada__texto__cancion {
+        font-size: 1.5vw;
+    }
+
+    .footer__cancionportada__texto__artista {
+        font-size: 1.4vw;
+    }
+
+    .footer__botonesduracion__botones__grupo__boton {
+        font-size: 1.5vw;
+    }
+
+    .footer__botonesduracion {
+        margin-left: -23vw;
+    }
+
+    .footer__botonesduracion__duracion__barra {
+        width: 42vw;
+    }
+
+    .footer__botonesduracion__duracion span {
+        font-size: 1.5vw;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    
+    header, .footer__primerafila, .footer__segundafila {
+        padding: 1em 2em;
+    }
+
+    /*
+    CSS HEADER
+    */
+
+    .header__logo {
+        width: 20vw;
+    }
+    
+    .header__menu__element a {
+        font-size: 1.9vw;
+    }
+    
+    .botones {
+        font-size: 1.9vw;
+    }
+
+    .header__menu__element{
+        padding: 0em 1em;
+    }
+
+    /*
+    CSS SIDEBAR
+    */
+
+    .main__sidebar__menu__element a {
+        font-size: 1.7vw;
+    }
+
+    .main__sidebar__menu {
+        padding: 2vh 2.7vw;
+    }
+
+    .main__sidebar {
+        width: 15.5vw;
+    }
+
+    .main__separador {
+        width: 83.8vw;
+    }
+
+    /*
+    CSS BUSCADOR
+    */
+
+    .main__separador__buscador {
+        height: 2.5vh;
+    }
+
+    .main__separador__buscador__input {
+        height: 1.5vh;
+        width: 94%;
+
+    }
+
+    .main__separador__buscador__icono {
+        font-size: 1.4vw;
+        padding-top: 0.8vh;
+    }
+
+    /*
+    CSS MAIN
+    */
+
+    .main__separador {
+        padding: 2vh;
+    }
+
+    .main__separador__elementos__titulo {
+        padding: 0vh 1vw 0vh 1vw;
+    }
+
+    .main__separador__elementos__elemento {
+        padding: 2vh 0.4vw 5vh 1vw;
+    }
+
+    .main__separador__elementos__titulo h1 {
+        font-size: 2vw;
+        align-self: flex-end;
+    }
+    
+    .main__separador__elementos__titulo a {
+        font-size: 1.7vw;
+    }
+    
+    .main__separador__elementos__elemento__portada {
+        width: 17vw;
+    }
+    
+    .main__separador__elementos__elemento__titulo {
+        font-size: 1.7vw;
+    }
+
+    .main__separador__elementos__elemento li {
+        padding: 1vh 3.4vw;
+        border: 2px solid var(--color-rojo);
+        border-radius: 0.3em;
+    }
+    
+    .main__separador__elementos__elemento li a {
+        font-size: 1.7vw;
+    }
+
+    .portadaArtista {
+        width: 17vw;
+        height: 15vw;
+    }
+
+    .main__separador__elementos__canciones {
+        padding: 1vh 1vw 5vh 1vw;
+    }
+
+    .main__separador__elementos__canciones__contenedor {
+        padding: 0.3vh 0.3vw;
+        width: 18.6vw;
+    }
+    
+    .main__separador__elementos__canciones__contenedor__portada {
+        width: 6.8vw;
+    }
+    
+    .main__separador__elementos__canciones__contenedor__cancionartista {
+        padding-left: 0.3vw;  
+        font-size: 1.5vw;
+    }
+    .main__separador__elementos__canciones__contenedor__duracion {
+        padding-left: 0vw;
+        font-size: 1.3vw;
+    }
+
+    /*
+    CSS FOOTER
+    */
+
+    .footer__cancionportada {
+        margin-left: 2vw;
+    }
+
+    .footer__botonesduracion {
+        margin-left: -16vw;
+    }
+
+    .footer__cancionportada__imagen {
+        width: 11vw;
+    }
+
+    .footer__cancionportada__texto__cancion {
+        font-size: 1.7vw;
+    }
+
+    .footer__cancionportada__texto__artista {
+        font-size: 1.6vw;
+    }
+
+    .footer__botonesduracion__botones__grupo {
+        padding: 1vh 2vw;
+    }
+
+    .footer__botonesduracion__botones__grupo__boton {
+        font-size: 1.7vw;
+    }
+
+    .footer__botonesduracion__duracion__barra {
+        width: 39vw;
+    }
+
+    .footer__botonesduracion__duracion span {
+        font-size: 1.7vw;
+    }
+}
+
+/*
+CSS CAMBIO A MÓVIL
+*/
+
+@media (max-width: 476px) {
+    .desktop {
+        display: none;
+    }
+    
+    .movil {
+        display:initial;
+    }
+
+    /*
+    CSS HEADER
+    */
+
+    .opciones {
+        margin-left: -21vw;
+    }
+
+    .movil--header__icono {
+        border: none;
+        background: none;
+        font-size: 5vw;
+        color: var(--color-negro);
+    }
+
+    .movil--header__logo {
+        width: 30vw;
+    }
+
+    .movil--header__icono i:hover {
+        color: var(--color-rojo);
+
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+    }
+
+    /*
+    CSS SIDEBAR
+    */
+
+    .oculto {
+        top: 0;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .oculto>* {
+        padding: 7vh 2vh 1vh 2vh;
+    }
+
+    #contenedor__fondo {
+        top: 0;
+        position: absolute;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--color-fondo);
+    }
+
+    .main__sidebar--movil {
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .header__logo--sidebar {
+        width: 30vw;
+        display: block;
+        margin: auto;
+        padding-bottom: 4vh;
+    }
+
+    .header__menu__element {
+        display: block;
+        padding-top: 5vh;
+        padding-left: 0vh;
+    }
+
+    .header__menu__element a {
+        font-size: 3vw;
+
+    }
+
+    .botones {
+        font-size: 4.5vw;
+    }
+
+    .botones i:hover {
+        color: var(--color-rojo);
+
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+    }
+
+    .main__sidebar__iconos {
+        text-align: center;
+        padding-top: 25vh;
+    }
+
+
+    /*
+    CSS BUSCADOR
+    */
+
+    .main__separador__buscador {
+        width: 80vw;
+        height: 2.6vh;
+    }
+
+    .main__separador__buscador__icono {
+        font-size: 2.4vw; 
+    }
+
+    /*
+    CSS MAIN
+    */
+
+    .main__separador {
+        width: 100%;
+        padding: 4vh;
+    }
+
+    .main__separador__elementos {
+        padding-bottom: 4vh;
+    }
+
+    .main__separador__elementos__titulo {
+        width: 100%;
+    }
+
+    .main__separador__elementos__titulo h1 {
+        font-size: 4vw;
+    }
+
+    .generos {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0vw;
+    }
+
+    .main__separador__elementos__elemento {
+        padding: 1vh 0.4vw 0vh 0.4vw;
+    }
+    
+    .main__separador__elementos__elemento li {
+        padding: 0.7vh 2.6vw;
+        border-radius: 3em;
+    }
+
+    .main__separador__elementos__elemento li a {
+        font-size: 2.3vw;
+    }
+    
+
+    .main__separador__elementos__elemento {
+        padding: 3vh 0.4vw 0vh 0.4vw;
+    }
+
+    .main__separador__elementos__elemento__portada {
+        width: 24vw;
+    }
+
+    .main__separador__elementos__elemento__titulo h1 {
+        font-size: 2.6vw;
+    }
+
+    .main__separador__elementos__titulo a {
+        font-size: 2.6vw;
+    }
+
+    .main__separador__elementos__elemento__titulo {
+        font-size: 2.6vw;
+    }
+
+    .main__separador__elementos__elemento__creador {
+        font-size: 2.4vw;
+    }
+    
+    .portadaArtista {
+        width: 25vw;
+        height: 23vw;
+    }
+    
+    .main__separador__elementos__canciones {
+        padding: 1vh 1vw 0vh 1vw;
+    }
+
+    .main__separador__elementos__canciones__contenedor {
+        padding: 0vh 0.5vw;
+        height: 13vh;
+    }
+
+    .main__separador__elementos__canciones__contenedor__portada {
+        width: 16.7vw;
+        margin: auto;
+    }
+
+    .main__separador__elementos__canciones__contenedor__cancionartista {
+        padding-left: 0.3vw;
+        font-size: 2.3vw;
+    }
+
+    .main__separador__elementos__canciones__contenedor__duracion {
+        padding-left: -4vw;
+        font-size: 2.2vw;
+        margin-left: -0.5vh;
+    }
+
+    /*
+    CSS FOOTER
+    */
+
+    .movil--footer {
+        display: flex;
+        width: 97%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    .footer__botonesduracion__botones {
+        width: auto;
+        padding-bottom: 2vh;
+    }
+    
+    .footer__botonesduracion__botones__grupo__boton {
+        font-size: 3vw;
+    }
+
+    .footer__cancionportada__texto__cancion {
+        font-size: 3vw;
+    }
+
+    .footer__cancionportada__texto__artista {
+        font-size: 2.5vw;
+    }
+
+    .footer__botonesduracion__duracion span {
+        font-size: 2.7vw;
+    }
+
+    .footer__botonesduracion__duracion__barra {
+        width: 66vw;
+    }
+}

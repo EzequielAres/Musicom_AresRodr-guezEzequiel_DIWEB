@@ -1,0 +1,162 @@
+/*
+DECLARACIÓN DE VARIABLES
+*/
+
+:root {
+    --color-negro: #232323;
+    --color-rojo: #D74A2F;
+    --color-blanco: #FFFFFF;
+    --archivo-black: 'Archivo Black', sans-serif;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+}
+
+/*
+IMPORTAR TIPOGRAFÍAS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Deca:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+CSS RESPONSIVE
+*/
+
+@media (max-width: 1030px) {
+    .contenedor__formulario {
+        height: 75vh;
+        width: 50vw;
+    }
+
+    .contenedor__formulario__logo {
+        width: 20vw;
+    }
+
+    .contenedor__formulario label {
+        font-size: 1.5vw;
+    }
+
+    .contenedor__formulario input{
+        width: 44vw;
+        height: 1.5vh;
+    }
+
+    .contenedor__formulario__recuerdameenlace__enlace {
+        font-size: 1.4vw;
+    }    
+
+    .contenedor__formulario input[type=checkbox] {
+        width: 2vw;
+    }
+
+    .contenedor__formulario > a {
+        font-size: 1.7vw;
+    }
+
+    .contenedor__formulario__texto {
+        font-size: 1.7vw;
+    }
+
+    .contenedor__formulario__boton {
+        padding: 1.6vh 11vw;
+    }
+
+    .mensaje {
+        font-size: 1.4vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .contenedor__formulario {
+        height: 73vh;
+        width: 70vw;
+    }
+
+    .contenedor__formulario__logo {
+        width: 30vw;
+    }
+
+    .contenedor__formulario label {
+        font-size: 2.4vw;
+    }
+
+    .contenedor__formulario input{
+        width: 63.5vw;
+        height: 1.9vh;
+    }
+
+    .contenedor__formulario__recuerdameenlace__enlace {
+        font-size: 2.4vw;
+    }    
+
+    .contenedor__formulario input[type=checkbox] {
+        width: 2.4vw;
+    }
+
+    .contenedor__formulario > a {
+        font-size: 2.4vw;
+    }
+
+    .contenedor__formulario__texto {
+        font-size: 2.4vw;
+    }
+
+    .contenedor__formulario__boton {
+        padding: 1.6vh 14vw;
+    }
+
+    .mensaje {
+        font-size: 1.7vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor__formulario {
+        height: 67vh;
+        width: 75vw;
+    }
+
+    .contenedor__formulario__logo {
+        width: 35vw;
+    }
+
+    .contenedor__formulario input {
+        width: 68vw;
+    }
+
+    .contenedor__formulario label {
+        font-size: 2.8vw;
+    }
+
+    .contenedor__formulario__recuerdameenlace__enlace {
+        font-size: 2.5vw;
+        padding: 0.6rem 1.1vw;
+    }    
+
+    .contenedor__formulario > a {
+        font-size: 2.7vw;
+    }
+
+    .contenedor__formulario__texto {
+        font-size: 2.7vw;
+    }
+
+    .contenedor__formulario__boton {
+        padding: 1.5vh 14vw;
+    }
+
+    .mensaje {
+        font-size: 2.3vw;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .contenedor__formulario__recuerdameenlace__enlace {
+        padding: 0.8rem 1.1vw;
+    }  
+}
